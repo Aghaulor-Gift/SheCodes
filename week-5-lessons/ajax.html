@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAX</title>
+    </head>
+
+    <body>
+        <!-- ajax with fetch
+
+        let root = 'https://jsonplaceholder.typicode.com'
+        let path = 'users/1'
+
+        fetch(root + '/' + path)
+        .then(response => (
+        response.json()
+        ))
+        .then(json => (
+        console.log(json)
+        ));
+
+        ajax with axios-->
+        <!DOCTYPE html>
+        <html>
+
+            <head>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            </head>
+
+            <body>
+
+                <script>
+                    function showUser(response) {
+                        alert(`The user name is ${response.data.name}`);
+                    }
+
+                    let url = "https://jsonplaceholder.typicode.com/users/1";
+                    axios.get(url).then(showUser);
+                </script>
+            </body>
+
+        </html>
+    </body>
+
+</html>
