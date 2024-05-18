@@ -21,6 +21,7 @@ function displayCurrentLocation(response) {
   formInput.addEventListener("submit",buttonSearch.value );
   let city = document.querySelector("country");
   city.innerHTML = console.log(formInput.value);
+  let latitude = console.log(response.data.main.lat
 }
 
 
